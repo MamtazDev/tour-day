@@ -6,87 +6,179 @@
   min-width: 320px;
   min-height: 100vh;
   display: flex;
-  place-items: center;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   background-position: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.banner h1:first-child {
-  font-family: 'Sigmar', cursive;
+.logo-img {
+  /* width: 140px;
+  height: 40px; */
+  margin: 0 auto !important;
   text-align: center;
-  font-size: 80px;
-  font-style: normal;
-  line-height: normal;
 }
 
-.banner h1:last-child {
-  font-family: 'Nunito', sans-serif;
+.text {
+  font-family: "Abril Fatface", serif;
   text-align: center;
-  font-size: 48px; 
+  font-size: 60px;
+  font-style: normal;
+  line-height: 1.2;
+  margin: 10px 0 20px;
+}
+
+.bangla {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  font-size: 36px;
   font-style: normal;
   line-height: normal;
+  margin-top: 20px;
 }
 
 .timerContainer {
   display: flex;
   gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
-/* .timeSection {
- 
-  width: 100%;
 
-} */
 .timerNumber {
   margin: 0;
-  color: #F2F2F2;
-  font-variant-numeric: ordinal;
-  font-size: 150px;
+  color: #f2f2f2;
+  font-size: 100px;
   font-style: normal;
-  line-height: normal;
-  letter-spacing: -8.33px;
+  line-height: 1;
+  letter-spacing: -2px;
   border-radius: 20px;
-background-color: #ffffff28;
-  background-repeat: no-repeat;
-  /* opacity: 1; */
-  width: 230px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background-color: #ffffff28;
+  width: 140px;
+  height: 140px;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 20px 50px 20px 50px; */
 }
 
 .timerLabel {
   text-align: center;
-  font-size: 28px;
+  font-size: 20px;
   font-style: normal;
-  line-height: normal;
+  line-height: 1;
+  margin-top: 10px;
 }
 
-@media only screen and (min-width:689px) and (max-width:992px) {
-  .timerNumber {
-    width: 150px;
-    font-size: 80px;
-  }
-}
-
-@media only screen and (max-width:688px) {
-  .banner h1 {
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  .text {
     font-size: 48px;
   }
 
+  .bangla {
+    font-size: 28px;
+  }
+
   .timerNumber {
-    font-size: 24px;
-    width: 60px;
-    border-radius: 10px;
-    letter-spacing: unset;
+    font-size: 80px;
+    width: 100px;
+    height: 100px;
   }
 
   .timerLabel {
-    text-align: center;
-    font-size: 8px;
-    font-style: normal;
-    line-height: normal;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 688px) {
+  .text {
+    font-size: 36px;
+  }
+
+  .bangla {
+    font-size: 20px;
+  }
+
+  .timerNumber {
+    font-size: 50px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .timerLabel {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .banner {
+    padding: 10px;
+  }
+
+  .logo-img {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .text {
+    font-size: 28px;
+  }
+
+  .bangla {
+    font-size: 18px;
+  }
+
+  .timerContainer {
+    gap: 10px;
+  }
+
+  .timerNumber {
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .timerLabel {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .banner {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .logo-img {
+    width: 90px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .text {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .bangla {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .timerContainer {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .timerNumber {
+    font-size: 36px;
+    width: 55px;
+    height: 55px;
+    border-radius: 8px;
+  }
+
+  .timerLabel {
+    font-size: 10px;
+    margin-top: 5px;
   }
 }
