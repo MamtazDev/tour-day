@@ -116,11 +116,6 @@
     padding: 10px;
   }
 
-  .logo-img {
-    width: 100px;
-    margin-bottom: 10px;
-  }
-
   .text {
     font-size: 28px;
   }
@@ -147,12 +142,6 @@
   .banner {
     padding: 10px;
     flex-direction: column;
-  }
-
-  .logo-img {
-    width: 90px;
-    height: auto;
-    margin-bottom: 10px;
   }
 
   .text {
