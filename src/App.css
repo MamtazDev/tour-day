@@ -31,7 +31,11 @@
   display: flex;
   gap: 20px;
 }
+/* .timeSection {
+ 
+  width: 100%;
 
+} */
 .timerNumber {
   margin: 0;
   color: #F2F2F2;
@@ -41,7 +45,9 @@
   line-height: normal;
   letter-spacing: -8.33px;
   border-radius: 20px;
-  background: #2E73B8;
+background-color: #ffffff28;
+  background-repeat: no-repeat;
+  /* opacity: 1; */
   width: 230px;
   padding-top: 20px;
   padding-bottom: 20px;

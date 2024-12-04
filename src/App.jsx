@@ -1,6 +1,6 @@
 import './App.css'
 import { useCountdown } from './hooks/useCountdown';
-import audio from "./assets/audio1.mp3"
+// import audio from "./assets/audio1.mp3"
 import audio1 from "./assets/audio.mp3"
 import {  useRef } from 'react';
 import Confetti from 'react-confetti'
@@ -55,13 +55,13 @@ function App() {
   return (
     <section className='banner' onClick={() => audioRef.current.play()}>
       <audio ref={audioRef} autoPlay loop preload='auto' style={{ display: "none" }} >
-        <source src={audio} type="audio/mp3" />
+        <source src={audio1} type="audio/mp3" />
       </audio>
       <div>
         <h1>{`Tour De Cox’s`}</h1>
 
         <div className='timerContainer'>
-          <div>
+          <div className='timeSection'>
             <p className='timerNumber'>{days}</p>
             <p className='timerLabel'>DAYS</p>
           </div>
