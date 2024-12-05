@@ -8,7 +8,7 @@ import logo from "./assets/logo.png";
 
 function App() {
   const targetDate = new Date(
-    "December 20, 2024 14:00:00 GMT +0600"
+    "December 20, 2024 22:00:00 GMT +0600"
   ).toISOString();
   const [days, hours, minutes, seconds] = useCountdown(targetDate);
 
